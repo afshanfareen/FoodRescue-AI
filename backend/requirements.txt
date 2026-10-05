@@ -2,7 +2,7 @@ fastapi==0.115.6
 uvicorn[standard]==0.32.1
 sqlalchemy==2.0.36
 alembic==1.14.0
-psycopg[binary]
+psycopg2-binary==2.9.10
 pydantic==2.10.3
 pydantic-settings==2.6.1
 python-jose[cryptography]==3.3.0
@@ -18,3 +18,4 @@ python-dotenv==1.0.1
 email-validator==2.2.0
 aiofiles==24.1.0
 pytz==2024.2
+bcrypt==4.2.1

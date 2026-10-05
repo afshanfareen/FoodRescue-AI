@@ -2,6 +2,7 @@ services:
   - type: web
     name: foodrescue-ai-backend
     runtime: python
+    pythonVersion: "3.11.9"
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
@@ -24,3 +25,11 @@ services:
         value: uploads
       - key: AI_MODEL_DIR
         value: ai_models
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: APP_BASE_URL
+        sync: false
